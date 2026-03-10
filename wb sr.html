@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOYVERSE | Trang chủ</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+  <!-- THANH TRÊN -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <!-- LOGO -->
+      <a href="wb home.html" class="logo-link">
+        <div class="logo">TOYVERSE</div>
+      </a>
+
+      <!-- DANH MỤC -->
+      <div class="menu-container">
+        <input type="checkbox" id="toggleMenu">
+        <label for="toggleMenu" class="menu-btn">Danh mục ▼</label>
+        <div class="menu-dropdown">
+          <a href="wb sp.html">Gundam</a>
+          <a href="wb sp.html">Super Sentai</a>
+          <a href="wb sp.html">Kamen Rider</a>
+          <a href="wb sp.html">Anime Figure</a>
+          <a href="wb sp.html">Pokemon</a>
+          <a href="wb sp.html">Bóng/Banh</a>
+          <a href="wb sp.html">Phụ kiện</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- THANH TÌM KIẾM Ở GIỮA -->
+    <div class="topbar-center">
+      <form action="wb sr.html" method="get" class="search-box">
+        <input type="text" placeholder="GUNDAM" name="q" required>
+        <button type="submit" class="search-btn">🔍</button>
+      </form>
+    </div>
+
+    <!-- BÊN PHẢI -->
+    <div class="topbar-right">
+      <button class="notify-btn" title="Thông báo">🔔</button>
+      <a href="wb giohang1.html" class="cart-btn" title="Giỏ hàng">🛒</a>
+
+      <!-- AVATAR DROPDOWN -->
+      <div class="avatar-wrapper">
+        <input type="checkbox" id="toggleAvatar">
+        <label for="toggleAvatar">
+          <img src="image/avatar.jpg"
+               alt="Avatar" class="avatar">
+        </label>
+        <div class="avatar-menu">
+          <a href="wb gd.html">👤 Thông tin tài khoản</a>
+          <a href="wb lichsu.html">🧾 Lịch sử mua hàng</a>
+          <button class="contact-btn">📞 Liên hệ hỗ trợ</button>
+          <a href="wb homenotlg.html" class="logout">🚪 Đăng xuất</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==== TIÊU ĐỀ ==== -->
+  <section class="page-title">
+    <h1>KẾT QUẢ TÌM KIẾM SẢN PHẨM</h1>
+  </section>
+
+  <!-- ==== LỌC ==== -->
+  <section class="filter">
+    <select>
+      <option>Tất cả loại</option>
+      <option>Gundam Nhật</option>
+      <option>Figure Nhật</option>
+      <option>Mô hình Trung</option>
+      <option>Lego</option>
+    </select>
+
+    <select>
+      <option>Sắp xếp: A → Z</option>
+      <option>Sắp xếp: Z → A</option>
+      <option>Giá: Thấp → Cao</option>
+      <option>Giá: Cao → Thấp</option>
+    </select>
+
+    <input type="text" placeholder="Giá từ (VNĐ)">
+    <input type="text" placeholder="Đến (VNĐ)">
+
+    <select>
+      <option>Năm sản xuất</option>
+      <option>2025</option>
+      <option>2024</option>
+      <option>2023</option>
+      <option>2022</option>
+    </select>
+
+    <select>
+      <option>Khu vực</option>
+      <option>Hà Nội</option>
+      <option>TP. Hồ Chí Minh</option>
+      <option>Đà Nẵng</option>
+      <option>Cần Thơ</option>
+    </select>
+
+    <button class="filter-btn">Lọc</button>
+  </section>
+
+  <!-- ==== DANH SÁCH SẢN PHẨM ==== -->
+  <section class="product-list">
+  <div class="product">
+    <a href="wb prod.html">
+      <img src="image/rx782.jpg">
+      <h3>Gundam RX-78-2</h3>
+      <p>Giá: 1.200.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prod.html">
+      <img src="image/mgex.jpg">
+      <h3>MS Strike Freedom Gundam</h3>
+      <p>Giá: 950.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prod.html">
+      <img src="image/barbatos.jpg" >
+      <h3>Barbatox Lupux Gundam</h3>
+      <p>Giá: 780.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prod.html">
+      <img src="image/mobirate.jpg" >
+      <h3>Gokaired</h3>
+      <p>Giá: 1.450.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div>
+  <div class="product">
+    <a href="wb prod.html">
+      <img src="image/bmw.jpg" >
+      <h3>Black Myth Wukong</h3>
+      <p>Giá: 1.200.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prod.html">
+      <img src="image/chudu.jpg" >
+      <h3>Chu Du 1/6</h3>
+      <p>Giá: 950.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prod.html">
+      <img src="image/bongchuyen1.jpg" >
+      <h3>Bóng chuyền Mikasa </h3>
+      <p>Giá: 780.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prod.html">
+      <img src="image/Desire_Driver_08.jpg" >
+      <h3>Desire Driver</h3>
+      <p>Giá: 1.450.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div><div class="product">
+    <a href="wb prod.html">
+      <img src="image/doomgeats.jpg" >
+      <h3>Dooms Geats </h3>
+      <p>Giá: 1.200.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prod.html">
+      <img src="image/gojo.jpeg">
+      <h3>Gojo Satoru</h3>
+      <p>Giá: 950.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prod.html">
+      <img src="image/luffy5.jpg">
+      <h3>Luffy gear 5</h3>
+      <p>Giá: 780.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prod.html">
+      <img src="image/sukuna.jpg" > 
+      <h3>Sukuna Figure</h3>
+      <p>Giá: 1.450.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb giohang1.html" class="buy-btn">🛒 Mua ngay</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ==== PHÂN TRANG ==== -->
+  <div class="phantrang">
+    <button>«</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>»</button>
+  </div>
+    <footer class="footer">   
+    <div class="footer-content">
+      <div class="footer-info">
+        <h2>Thông tin liên lạc</h2>
+        <p>Email: <a href="mailto:dochoi@gmail.com">dochoi@gmail.com</a></p>
+        <p>Hotline: <a href="tel:0909090909">0909090909</a></p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Kết nối với chúng tôi</h3>
+        <div class="social-buttons">
+          <div class="social-btn fb">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"> Facebook
+          </div>
+          <div class="social-btn ig">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> Instagram
+          </div>
+          <div class="social-btn tw">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"> Twitter
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 TOYVERSE. All rights reserved.</p>
+  </footer>
+</body>
+</html>

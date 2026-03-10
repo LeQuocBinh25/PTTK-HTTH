@@ -1,0 +1,245 @@
+/* ===== CƠ BẢN ===== */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #f9fbff, #e8f3ff);
+  margin: 0;
+  color: #222;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: #d90429;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  letter-spacing: 1px;
+  font-size: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 95%;
+  max-width: 1300px; /* tăng từ 900px lên */
+  margin: 40px auto 70px;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+/* ===== CARD ===== */
+.card {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 18px;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  margin-bottom: 28px;
+}
+
+.card h2 {
+  color: #001d3d;
+  border-left: 6px solid #d90429;
+  padding-left: 12px;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+/* ===== INFO GRID ===== */
+.info-grid {
+  display: grid;
+  gap: 10px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.info-text {
+  font-size: 16px;
+  font-weight: 500;
+  background: #f9f9f9;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border-left: 4px solid #d90429;
+}
+
+/* ===== BẢNG SẢN PHẨM ===== */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-table th,
+.product-table td {
+  padding: 14px 12px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.product-table th {
+  background: #f3f5f8;
+  color: #001d3d;
+  font-weight: 600;
+}
+
+.product-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.product-table tbody tr:hover {
+  background: #f8faff;
+}
+
+.product-table img {
+  width: 300px;                /* cố định tỉ lệ phù hợp */
+  height: auto;                /* giữ nguyên tỷ lệ ảnh */
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  object-fit: contain;         /* KHÔNG cắt ảnh */
+  background-color: #fff;      /* tạo nền trắng nếu ảnh nhỏ */
+  padding: 5px;                /* cách viền để ảnh không dính */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+.product-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.4;
+}
+
+.product-desc b {
+  font-size: 16px;
+  color: #001d3d;
+}
+
+.product-desc small {
+  color: #666;
+  font-size: 13px;
+}
+@media (max-width: 768px) {
+  .product-table img {
+    width: 70px;
+  }
+
+  .product-table th,
+  .product-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .product-desc small {
+    font-size: 12px;
+  }
+} 
+.total-label {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.total-price {
+  color: #d90429;
+  font-size: 17px;
+}
+
+/* ===== NÚT ===== */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 14px 22px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.btn-primary {
+  background: #d90429;
+  color: white;
+}
+
+.btn-primary:hover { background: #a0031e; }
+
+.btn-secondary {
+  background: #8d99ae;
+  color: white;
+}
+
+.btn-secondary:hover { background: #6c757d; }
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #aa1111;
+  color: #fdfbfb;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-info, .footer-social {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+}
+
+.footer-info a {
+  color: #f4eeee;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  background: #8d99ae;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.social-btn img {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.social-btn:hover {
+  background: #6c757d;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}

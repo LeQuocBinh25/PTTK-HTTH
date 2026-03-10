@@ -1,0 +1,91 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Ẩn checkbox */
+#toggle-menu {
+  display: none;
+}
+
+/* Nút mở menu */
+.menu-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 26px;
+  background-color: #58b8de;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-btn:hover {
+  background-color: #7fd7f4;
+  transform: scale(1.1);
+}
+
+/* Container chứa các link (ẩn mặc định) */
+.nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 230px;
+  height: 100vh;
+  background: linear-gradient(180deg, #a8e1ff, #7cd0f6);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-top: 60px;
+  transition: left 0.4s ease;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Khi checkbox được bật -> mở menu */
+#toggle-menu:checked ~ .nav {
+  left: 0;
+}
+
+/* Mũi tên quay ngược khi menu mở */
+#toggle-menu:checked + .menu-btn {
+  transform: rotate(180deg);
+  background-color: #47a5cb;
+}
+
+/* Phần thông tin lớn đầu menu */
+.big {
+  font-size: 20px;
+  background-color: #58b8de;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  color: white;
+}
+
+/* Các đường dẫn trong menu */
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 30px;
+  text-align: center;
+  border-top: 1px solid #000;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #b8ecff;
+  transform: scale(1.05);
+}
+
+/* Mục active (nếu bạn thêm class="active" vào a) */
+.nav a.active {
+  background-color: #48b8e0;
+  color: white;
+  font-weight: bold;
+}

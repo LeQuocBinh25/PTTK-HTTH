@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOYVERSE | Chỉnh sửa thông tin</title>
+  <link rel="stylesheet" href="style gdedit.css" />
+</head>
+<body>
+  <!-- THANH TRÊN -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="wb home.html" class="logo-link"><div class="logo">TOYVERSE</div></a>
+
+      <div class="menu-container">
+        <input type="checkbox" id="toggleMenu">
+        <label for="toggleMenu" class="menu-btn">Danh mục ▼</label>
+        <div class="menu-dropdown">
+          <a href="wb sp.html">Gundam</a>
+          <a href="wb sp.html">Super Sentai</a>
+          <a href="wb sp.html">Kamen Rider</a>
+          <a href="wb sp.html">Anime Figure</a>
+          <a href="wb sp.html">Pokemon</a>
+          <a href="wb sp.html">Bóng/Banh</a>
+          <a href="wb sp.html">Phụ kiện</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-center">
+      <form action="wb sr.html" method="get" class="search-box">
+        <input type="text" placeholder="Tìm kiếm sản phẩm..." name="q" required>
+        <button type="submit" class="search-btn">🔍</button>
+      </form>
+    </div>
+
+    <div class="topbar-right">
+      <button class="notify-btn" title="Thông báo">🔔</button>
+      <a href="wb giohang1.html" class="cart-btn" title="Giỏ hàng">🛒</a>
+
+      <div class="avatar-wrapper">
+        <input type="checkbox" id="toggleAvatar">
+        <label for="toggleAvatar">
+          <img src="image/avatar.jpg" alt="Avatar" class="avatar">
+        </label>
+        <div class="avatar-menu">
+          <a href="wb gd.html">👤 Thông tin tài khoản</a>
+          <a href="wb lichsu.html">🧾 Lịch sử mua hàng</a>
+          <button class="contact-btn">📞 Liên hệ hỗ trợ</button>
+          <a href="wb login.html" class="logout">🚪 Đăng xuất</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU DỌC -->
+  <nav class="sidebar">
+    <h2>Tài khoản</h2>
+    <div class="menu-links">
+      <a href="wb gd.html">👤 Thông tin tài khoản</a>
+      <a href="wb lichsu.html">🧾 Lịch sử mua hàng</a>
+      <button class="sd-btn">🎁 Khuyến mãi</button>
+      <button class="sd-btn">📞 Liên hệ hỗ trợ</button>
+    </div>
+
+    <div class="logout-box">
+      <a href="wb login.html">🚪 Đăng xuất</a>
+    </div>
+  </nav>
+
+  <!-- NỘI DUNG -->
+  <main class="main-content">
+    <section class="account-info">
+      <div class="info-header">
+        <img src="image/avatar.jpg" alt="Avatar" class="avatar-large">
+        <div class="user-details">
+          <h2>Chỉnh sửa thông tin</h2>
+          <p>📱 0968919701</p>
+        </div>
+      </div>
+
+      <div class="info-body">
+        <h3>Thông tin cá nhân</h3>
+        <table>
+          <tr><td>Họ và tên:</td><td><input type="text" value="Nguyễn Khôi"></td></tr>
+          <tr><td>Email:</td><td><input type="email" value="phamnguyenkhoi2906@gmail.com"></td></tr>
+          <tr><td>Ngày sinh:</td><td><input type="date"></td></tr>
+          <tr><td>Giới tính:</td>
+            <td>
+              <select>
+                <option>Nam</option>
+                <option>Nữ</option>
+                <option>Khác</option>
+              </select>
+            </td>
+          </tr>
+          <tr><td>Địa chỉ:</td><td><input type="text" placeholder="Nhập địa chỉ của bạn"></td></tr>
+        </table>
+
+        <div class="btn-group">
+          <a href="wb gd.html" type="submit" class="btn-save">💾 Lưu thay đổi</a>
+          <a href="wb gd.html" class="btn-cancel">❌ Hủy</a>
+        </div>
+    </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h2>Thông tin liên lạc</h2>
+        <p>Email: <a href="mailto:dochoi@gmail.com">dochoi@gmail.com</a></p>
+        <p>Hotline: <a href="tel:0909090909">0909090909</a></p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Kết nối với chúng tôi</h3>
+        <div class="social-buttons">
+          <div class="social-btn fb">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"> Facebook
+          </div>
+          <div class="social-btn ig">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> Instagram
+          </div>
+          <div class="social-btn tw">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"> Twitter
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 TOYVERSE. All rights reserved.</p>
+  </footer>
+</body>
+</html>

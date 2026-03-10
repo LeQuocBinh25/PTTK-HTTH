@@ -1,0 +1,87 @@
+/* Tổng thể */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0077b6, #90e0ef);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Khung đăng nhập */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-box {
+  background: #ffffff;
+  width: 380px;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Tiêu đề */
+h2 {
+  margin-bottom: 30px;
+  color: #023e8a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Nhóm nhập liệu */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-weight: 600;
+  color: #03045e;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #90e0ef;
+  border-radius: 8px;
+  transition: 0.3s;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+}
+
+/* Nút đăng nhập */
+.login-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #0096c7, #48cae4);
+  transform: scale(1.02);
+}
+
+/* Hiệu ứng mượt khi hiển thị */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

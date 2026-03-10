@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOYVERSE | Trang chủ</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+  <!-- THANH TRÊN -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <!-- LOGO -->
+      <a href="wb homenotlg.html" class="logo-link">
+        <div class="logo">TOYVERSE</div>
+      </a>
+
+      <!-- DANH MỤC -->
+      <div class="menu-container">
+        <input type="checkbox" id="toggleMenu">
+        <label for="toggleMenu" class="menu-btn">Danh mục ▼</label>
+        <div class="menu-dropdown">
+          <a href="wb spnotlg.html">Gundam</a>
+          <a href="wb spnotlg.html">Super Sentai</a>
+          <a href="wb spnotlg.html">Kamen Rider</a>
+          <a href="wb spnotlg.html">Anime Figure</a>
+          <a href="wb spnotlg.html">Pokemon</a>
+          <a href="wb spnotlg.html">Bóng/Banh</a>
+          <a href="wb spnotlg.html">Phụ kiện</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- THANH TÌM KIẾM Ở GIỮA -->
+    <div class="topbar-center">
+      <form action="wb srnotlg.html" method="get" class="search-box">
+        <input type="text" placeholder="Tìm kiếm sản phẩm..." name="q" required>
+        <button type="submit" class="search-btn">🔍</button>
+      </form>
+    </div>
+
+    <!-- BÊN PHẢI -->
+    <div class="topbar-right">
+      <button class="notify-btn" title="Thông báo">🔔</button>
+      <a href="wb giohang.html" class="cart-btn" title="Giỏ hàng">🛒</a>
+
+      <!-- AVATAR DROPDOWN -->
+      <div class="avatar-wrapper">
+        <input type="checkbox" id="toggleAvatar">
+        <label for="toggleAvatar">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Default_pfp.svg/600px-Default_pfp.svg.png"
+               alt="Avatar" class="avatar">
+        </label>
+        <div class="avatar-menu">
+          <a href="wb login.html">Đăng nhập</a>
+          <a href="wb rg.html">Đăng ký</a>
+          <button class="contact-btn">📞 Liên hệ hỗ trợ</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==== TIÊU ĐỀ ==== -->
+  <section class="page-title">
+    <h1>  Danh Mục Sản Phẩm</h1>
+  </section>
+
+  <!-- ==== LỌC ==== -->
+  <section class="filter">
+    <select>
+      <option>Sắp xếp: A → Z</option>
+      <option>Sắp xếp: Z → A</option>
+      <option>Giá: Thấp → Cao</option>
+      <option>Giá: Cao → Thấp</option>
+    </select>
+
+    <input type="text" placeholder="Giá từ (VNĐ)">
+    <input type="text" placeholder="Đến (VNĐ)">
+
+    <select>
+      <option>Năm sản xuất</option>
+      <option>2025</option>
+      <option>2024</option>
+      <option>2023</option>
+      <option>2022</option>
+    </select>
+
+    <select>
+      <option>Khu vực</option>
+      <option>Hà Nội</option>
+      <option>TP. Hồ Chí Minh</option>
+      <option>Đà Nẵng</option>
+      <option>Cần Thơ</option>
+    </select>
+
+    <button class="filter-btn">Lọc</button>
+  </section>
+
+  <!-- ==== DANH SÁCH SẢN PHẨM ==== -->
+ <section class="product-list">
+  <div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/rx782.jpg">
+      <h3>Gundam RX-78-2</h3>
+      <p>Giá: 1.200.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/mgex.jpg">
+      <h3>MS Strike Freedom Gundam</h3>
+      <p>Giá: 950.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/barbatos.jpg" >
+      <h3>Barbatox Lupux Gundam</h3>
+      <p>Giá: 780.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/kamiki.jpg" >
+      <h3>Kamiki Burning Gundam</h3>
+      <p>Giá: 1.450.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div>
+  <div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/amazingexia.jpg" >
+      <h3>Amazing Exia Gundam</h3>
+      <p>Giá: 1.200.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/redwr.jpg" >
+      <h3>Red Warrior Gundam</h3>
+      <p>Giá: 950.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/devil.jpg" >
+      <h3>Devil Gundam </h3>
+      <p>Giá: 780.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/missszb.jpg" >
+      <h3>Miss Sazabi Gundam</h3>
+      <p>Giá: 1.450.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div><div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/crossbone.jpg" >
+      <h3>Crossbone Gundam Maoh</h3>
+      <p>Giá: 1.200.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/exia.jpg">
+      <h3>Exia Dark Matter Gundam</h3>
+      <p>Giá: 950.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/cosmos.jpg">
+      <h3>Build Strike Cosmos Gundam</h3>
+      <p>Giá: 780.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div>
+
+  <div class="product">
+    <a href="wb prodnotlg.html">
+      <img src="image/astray.jpg" > 
+      <h3>Sengoku Astray Gundam</h3>
+      <p>Giá: 1.450.000 VNĐ</p>
+    </a>
+    <div class="product-actions">
+      <button class="like-btn">❤️</button>
+      <a href="wb login.html" class="buy-btn">🛒 Đăng nhập để mua</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ==== PHÂN TRANG ==== -->
+  <div class="phantrang">
+    <button>«</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>»</button>
+  </div>
+    <footer class="footer">   
+    <div class="footer-content">
+      <div class="footer-info">
+        <h2>Thông tin liên lạc</h2>
+        <p>Email: <a href="mailto:dochoi@gmail.com">dochoi@gmail.com</a></p>
+        <p>Hotline: <a href="tel:0909090909">0909090909</a></p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Kết nối với chúng tôi</h3>
+        <div class="social-buttons">
+          <div class="social-btn fb">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"> Facebook
+          </div>
+          <div class="social-btn ig">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> Instagram
+          </div>
+          <div class="social-btn tw">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"> Twitter
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 TOYVERSE. All rights reserved.</p>
+  </footer>
+</body>
+</html>

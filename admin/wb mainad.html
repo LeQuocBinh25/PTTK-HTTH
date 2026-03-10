@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Otaku Toy | Admin Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../admincss/style mainad.css">
+</head>
+<body>
+
+  <!-- ===== TOPBAR ===== -->
+  <header class="topbar">
+    <div class="left-top">
+      <label for="menu-toggle" class="menu-btn">☰</label>
+      <h1 class="logo">TOYVERSE ADMIN</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="🔍 Tìm kiếm...">
+      <button>Tìm</button>
+    </div>
+    <div class="right-top">
+      <div class="notify">🔔<span class="badge">3</span></div>
+       <div class="avatar-wrapper">
+        <input type="checkbox" id="toggleAvatar">
+        <label for="toggleAvatar">
+          <img src="../image/avatarad.png "
+               alt="Avatar" class="avatar">
+        </label>
+        <div class="avatar-menu">
+
+          <a href="wb loginad.html" class="logout">🚪 Đăng xuất</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SIDEBAR MENU ===== -->
+ <input type="checkbox" id="menu-toggle" checked> 
+  <nav class="menu">
+    <div class="big">
+       <img src="../image/avatarad.png"
+     class="avatar">
+    <b>Nhân viên 1 ID:001</b>
+    </div>
+    <div class="nav">
+      <a href="wb mainad.html"class="active">🏠 Trang chủ</a>
+      <a href="wb custad.html">👥 Khách hàng</a>
+
+      <!-- MENU SẢN PHẨM -->
+      <div class="menu-group">
+        <input type="checkbox" id="toggle-product" hidden>
+        <label for="toggle-product" class="menu-dropdown">📦 Sản phẩm ▾</label>
+        <div class="submenu">
+          <a href="wb typead.html">Danh mục sản phẩm</a>
+          <a href="wb itemad.html"> Danh sách sản phẩm</a>
+        </div>
+      </div>
+
+      <a href="wb nhapad.html">🚚 Nhập hàng</a>
+      <a href="wb dathangad.html">🛒 Đặt hàng</a>
+      <a href="wb pricead.html" >💲 Giá</a>
+      <a href="wb khoad.html">🏢 Kho</a>
+    </div>
+  </nav>
+
+  <!-- ===== NỘI DUNG CHÍNH ===== -->
+  <main class="trangchu">
+    <section class="cards">
+      <div class="card"><h3>Doanh thu theo ngày</h3><p>12.000.000.₫</p></div>
+      <div class="card"><h3>Giao dịch hôm nay</h3><p>10</p></div>
+      <div class="card"><h3>Khách VIP</h3><p>2</p></div>
+      <div class="card"><h3>Sản phẩm hot</h3><p>Gundam RX-78</p></div>
+    </section>
+
+    <section class="performance">
+      <h2>Hiệu suất tổng quan</h2>
+      <div class="progress-container">
+        <div class="progress-item"><span>Doanh thu</span><div class="progress-bar"><div style="width:80%"></div></div></div>
+        <div class="progress-item"><span>Lợi nhuận</span><div class="progress-bar"><div style="width:65%;background:#2a9d8f"></div></div></div>
+
+      </div>
+    </section>
+
+    <section class="charts">
+  <div class="chart-box">
+    <h2>Doanh thu theo tháng</h2>
+    <div class="bar-chart">
+      <div class="bar" style="--height:80%"><span>Jan</span></div>
+      <div class="bar" style="--height:60%"><span>Feb</span></div>
+      <div class="bar" style="--height:75%"><span>Mar</span></div>
+      <div class="bar" style="--height:90%"><span>Apr</span></div>
+      <div class="bar" style="--height:55%"><span>May</span></div>
+      <div class="bar" style="--height:100%"><span>Jun</span></div>
+      <div class="bar" style="--height:90%"><span>Jul</span></div>
+      <div class="bar" style="--height:70%"><span>Aug</span></div>
+      <div class="bar" style="--height:75%"><span>Sep</span></div>
+      <div class="bar" style="--height:80%"><span>Oct</span></div>
+      <div class="bar" style="--height:65%"><span>Nov</span></div>
+      <div class="bar" style="--height:100%"><span>Dec</span></div>
+    </div>
+  </div>
+
+  <div class="chart-box">
+    <h2>Tỷ lệ sản phẩm bán ra</h2>
+    <div class="pie-chart"></div>
+    <ul class="legend">
+      <li><span class="color gundam"></span> Gundam</li>
+      <li><span class="color fig"></span> Figure</li>
+      <li><span class="color pk"></span> Phụ kiện</li>
+      <li><span class="color kr"></span>Kamen rider</li>
+      <li><span class="color ss"></span>Super Sentai</li>
+      <li><span class="color p"></span>Pokemon</li>
+      <li><span class="color b"></span>Bóng/banh</li>
+    </ul>
+  </div>
+</section>
+
+
+    <section class="ls">
+  <h2>Lịch sử giao dịch</h2>
+  <table class="order-table">
+    <tr>
+      <th>Mã đơn</th>
+      <th class="lsct">Chi tiết</th>
+      <th class="lstg">Thời gian</th>
+      <th>Tổng tiền</th>
+      <th>Trạng thái</th>
+    </tr>
+    <tr>
+      <td>#001</td>
+      <td>RX-78 x1</td>
+      <td>20:45 - 20/10/2025</td>
+      <td>500.000₫</td>
+      <td><span class="status done">Hoàn tất</span></td>
+    </tr>
+    <tr>
+      <td>#002</td>
+      <td>Zero-One x1</td>
+      <td>18:15 - 20/10/2025</td>
+      <td>1.200.000₫</td>
+      <td><span class="status done">Hoàn tất</span></td>
+    </tr>
+    <tr>
+      <td>#003</td>
+      <td>Figure x1</td>
+      <td>13:27 - 20/10/2025</td>
+      <td>1.040.000₫</td>
+      <td><span class="status done">Hoàn tất</span></td>
+    </tr>
+    <tr>
+      <td>#004</td>
+      <td>Figure Tanjiro x1</td>
+      <td>09:12 - 20/10/2025</td>
+      <td>2.320.000₫</td>
+      <td><span class="status done">Hoàn tất</span></td>
+    </tr>
+  </table>
+</section>
+
+  </main>
+
+</body>
+</html>

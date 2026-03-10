@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home-style.css">
+    <title>Shop đồ chơi</title>
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <div class="shop-name">Shop đồ chơi</div>
+            <div class="home-button">
+                <a href="/home.html"><button>🏠</button></a>   
+            </div>
+            <div class="search-button">
+                <input type="text" placeholder="Tìm kiếm"><button>🔍︎</button>
+            </div>
+            <div class="avatar">
+                <button><img src="/image/dadangnhap.jpg"></button>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-button">☰</label>
+            <nav class="menu">
+                <a href="#">Thông tin tài khoản</a>
+                <a href="#">Danh mục</a>
+                <a href="#">Chế độ bảo hành</a>
+                <a href="#">Tin tức</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product">
+            <div class="product-container">
+            <!-- Ảnh sản phẩm -->
+                <div class="product-image">
+                    <img src="/image/mobirate.jpg">
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="product-info">
+                    <h2>Mobirates memorial edition</h2>
+                    <p class="brand">Thương hiệu: <a href="#">Bandai</a></p>
+                    <p class="price">
+                        <span class="new-price">5.000.000 ₫</span>
+                        <span class="old-price">5.000.000 ₫</span>
+                        <span class="discount">-0%</span>
+                    </p>
+
+                    <ul class="features">
+                        <li>✅ Hàng chính hãng</li>
+                        <li>🚚 Miễn phí giao hàng toàn quốc cho đơn trên 500k</li>
+                        <li>⚡ Giao hàng hỏa tốc 4 tiếng</li>
+                        <li>💳 Hỗ trợ trả góp đơn từ 3 triệu</li>
+                    </ul>
+
+                    <!-- Số lượng và nút mua -->
+                    <div class="buy-section">
+                        <label>Số lượng:</label>
+                        <div class="quantity">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                        <button class="add-cart">🛒</button>
+                        <button class="buy">Mua</button>
+                    </div>
+                    
+                    <ul class="features">
+                        <h2>Mô tả sản phẩm</h2>
+                        <li>- Mô hình điện thoại siêu nhân</li>
+                        <li>- Xuất sứ Nhật Bản</li>
+                        <li>- Chất liệu: nhựa</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-list">
+            <h2 class="section-title">Sản phẩm liên quan</h2>
+            <div class="product-grid">
+                <!-- Sản phẩm 1 -->
+                <a href="banhmikasa.html" class="a-button">
+                    <div class="product-card">
+                        <div class="discount-badge">-25%</div>
+                        <img src="/image/bongchuyen1.jpg">
+                        <p class="brand">Hãng: Mikasa</p>
+                        <p class="name">Banh bóng chuyền Mikasa</p>
+                        <p class="price">
+                        <span class="new">824.250 ₫</span>
+                        <span class="old">1.099.000 ₫</span>
+                        </p>
+                        <!-- <div class="actions">
+                        <button class="add-cart">Thêm Vào Giỏ Hàng</button>
+                        <button class="heart">♡</button>
+                        </div> -->
+                    </div>
+                </a>    
+
+                <!-- Sản phẩm 2 -->
+                <a href="geats.html" class="a-button">
+                    <div class="product-card">
+                        <div class="discount-badge">-0%</div>
+                        <img src="/image/Desire_Driver_08.jpg">
+                        <p class="brand">Hãng: Bandai</p>
+                        <p class="name">Dx Desire driver</p>
+                        <p class="price">
+                        <span class="new">1.500.000 ₫</span>
+                        <span class="old">1.500.000 ₫</span>
+                        </p>
+                        <!-- <div class="actions">
+                        <button class="add-cart">Thêm Vào Giỏ Hàng</button>
+                        <button class="heart">♡</button>
+                        </div> -->
+                    </div>
+                </a>    
+
+                <!-- Sản phẩm 3 -->
+                <a href="mnp.html" class="a-button">
+                    <div class="product-card">
+                        <img src="/image/Motor-Nuclear-MNP-XH02-Cao-Ren.jpg">
+                        <p class="brand">Hãng: Motor nuclear</p>
+                        <p class="name">MNP-XH02 CAOREN</p>
+                        <p class="price">
+                        <span class="new">800.000 ₫</span>
+                        </p>
+                        <!-- <div class="actions">
+                        <button class="add-cart">Thêm Vào Giỏ Hàng</button>
+                        <button class="heart">♡</button>
+                        </div> -->
+                    </div>
+                </a>
+
+                <!-- Sản phẩm 5 -->
+                <a href="dragonsymphony.html" class="a-button">
+                    <div class="product-card">
+                        <div class="discount-badge">-20%</div>
+                        <img src="/image/dragonsymphony.jpg.png">
+                        <p class="brand">Hãng: Bandai</p>
+                        <p class="name">Dragon Symphony Zyusouken</p>
+                        <p class="price">
+                        <span class="new">4.000.000 ₫</span>
+                        <span class="old">5.000.000 ₫</span>
+                        </p>
+                        <!-- <div class="actions">
+                        <button class="add-cart">Thêm Vào Giỏ Hàng</button>
+                        <button class="heart">♡</button>
+                        </div> -->
+                    </div>
+                </a>
+
+                <!-- Sản phẩm 6 -->
+                <a href="blackmythwukong.html" class="a-button">
+                    <div class="product-card">
+                        <img src="/image/bmw.jpg">
+                        <p class="brand">Hãng: UMAN Studio</p>
+                        <p class="name">Mô hình Resin Wukong 1/6</p>
+                        <p class="price">
+                        <span class="new">7.000.000 ₫</span>
+                        </p>
+                        <!-- <div class="actions">
+                        <button class="add-cart">Thêm Vào Giỏ Hàng</button>
+                        <button class="heart">♡</button>
+                        </div> -->
+                    </div>
+                </a>
+
+                <!-- Sản phẩm 7 -->
+                <a href="csm.html" class="a-button">
+                    <div class="product-card">
+                        <img src="/image/csm.jpg">
+                        <p class="brand">Hãng: Bandai</p>
+                        <p class="name">CompleteSelectionModifcation</p>
+                        <p class="price">
+                        <span class="new">5.500.000 ₫</span>
+                        </p>
+                        <!-- <div class="actions">
+                        <button class="add-cart">Thêm Vào Giỏ Hàng</button>
+                        <button class="heart">♡</button>
+                        </div> -->
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+
+<footer>
+    <div class="footer">
+        <h2>Thông tin liên lạc</h2> 
+        <p>Email: dochoi@gmail.com</p> 
+        <p>Hotline: 0909090909</p> 
+        <p>Facebook: Đồ chơi Sài Gòn</p>
+    </div>
+</footer>
+</html>
