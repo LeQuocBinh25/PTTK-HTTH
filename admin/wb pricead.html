@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Otaku Toy | Admin Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../admincss/style pricead.css">
+</head>
+<body>
+
+  <!-- ===== TOPBAR ===== -->
+  <header class="topbar">
+    <div class="left-top">
+      <label for="menu-toggle" class="menu-btn">☰</label>
+      <h1 class="logo">TOYVERSE ADMIN</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="🔍 Tìm kiếm...">
+      <button>Tìm</button>
+    </div>
+    <div class="right-top">
+      <div class="notify">🔔<span class="badge">3</span></div>
+       <div class="avatar-wrapper">
+        <input type="checkbox" id="toggleAvatar">
+        <label for="toggleAvatar">
+          <img src="../image/avatarad.png "
+               alt="Avatar" class="avatar">
+        </label>
+        <div class="avatar-menu">
+
+          <a href="wb loginad.html" class="logout">🚪 Đăng xuất</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SIDEBAR MENU ===== -->
+ <input type="checkbox" id="menu-toggle" checked> 
+  <nav class="menu">
+    <div class="big">
+       <img src="../image/avatarad.png"
+     class="avatar">
+    <b>Nhân viên 1 ID:001</b>
+    </div>
+    <div class="nav">
+      <a href="wb mainad.html">🏠 Trang chủ</a>
+      <a href="wb custad.html">👥 Khách hàng</a>
+
+      <!-- MENU SẢN PHẨM -->
+      <div class="menu-group">
+        <input type="checkbox" id="toggle-product" hidden>
+        <label for="toggle-product" class="menu-dropdown">📦 Sản phẩm ▾</label>
+        <div class="submenu">
+          <a href="wb typead.html">Danh mục sản phẩm</a>
+          <a href="wb itemad.html"> Danh sách sản phẩm</a>
+        </div>
+      </div>
+
+      <a href="wb nhapad.html">🚚 Nhập hàng</a>
+      <a href="wb dathangad.html">🛒 Đặt hàng</a>
+      <a href="wb pricead.html"class="active" >💲 Giá</a>
+      <a href="wb khoad.html">🏢 Kho</a>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="trangchu">
+    <h1 class="tieudechinh">💲 Quản lý giá bán</h1>
+    <hr class="divider" />
+      <section class="box">
+    <h2 class="sub-title">📊 Tỉ lệ lợi nhuận theo loại sản phẩm</h2>
+
+<div class="box profit-type-table">
+  <!-- Bộ lọc nằm trong khung -->
+  
+  <!-- Bảng dữ liệu -->
+  <table class="price-table">
+    <thead>
+      <tr>
+        <th>Loại sản phẩm</th>
+        <th>Tỉ lệ lợi nhuận (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gundam</td>
+        <td><input type="number" value="20" readonly>%</td>
+      </tr>
+      <tr>
+        <td>Figure</td>
+        <td><input type="number" value="25" readonly>%</td>
+      </tr>
+      <tr>
+        <td>Kamen Rider</td>
+        <td><input type="number" value="30" readonly>%</td>
+      </tr>
+       <tr>
+        <td>Super Sentai</td>
+        <td><input type="number" value="10" readonly>%</td>
+      </tr>
+      <tr>
+        <td>Pokemon</td>
+        <td><input type="number" value="5" readonly>%</td>
+      </tr>
+      <tr>
+        <td>Bóng/banh</td>
+        <td><input type="number" value="12" readonly>%</td>
+      </tr>
+      <tr>
+        <td>Phụ kiện</td>
+        <td><input type="number" value="18" readonly>%</td>
+      </tr>
+      
+    </tbody>
+  </table>
+<section class="search-filter">
+    <div class="filter-form" onsubmit="return false;">
+      <input type="text" placeholder="🔎 Tìm sản phẩm...">
+      <select>
+        <option>Loại: Tất cả</option>
+        <option>Gundam</option>
+        <option>Kamen Rider</option>
+        <option>Super Sentai</option>
+        <option>Pokemon</option>
+        <option>Figure Anime</option>
+        <option>Bóng/banh</option>
+        <option>Phụ kiện</option>
+      </select>
+      <select>
+        <option>Giá vốn</option>
+        <option>1 - 3 triệu</option>
+        <option>3 - 5 triệu</option>
+        <option>5 - 10 triệu</option>
+        <option>Trên 10 triệu</option>
+      </select>
+      <select>
+        <option>Giá bán</option>
+        <option>1 - 3 triệu</option>
+        <option>3 - 5 triệu</option>
+        <option>5 - 10 triệu</option>
+        <option>Trên 10 triệu</option>
+      </select>
+      <select>
+        <option>Lợi nhuận</option>
+        <option>0 - 10%</option>
+        <option>10 - 20%</option>
+        <option>20 - 25%</option>
+        <option>Trên 25%</option>
+      </select>
+      <button type="submit" class="filter-btn">Lọc</button>
+    </div>
+  </section>
+
+  <!-- Nút thao tác -->
+  <div class="form-buttons">
+    <button class="save-btn">💾 Lưu thay đổi</button>
+    <button class="cancel-btn">↩️ Hủy</button>
+  </div>
+</div>
+ 
+
+    <section class="box ds">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Ảnh</th>
+            <th>Mã SP</th>
+            <th>Loại sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá vốn</th>
+            <th>Giá bán</th>
+            <th>Lợi nhuận</th>
+          </tr>
+        </thead>
+      <tbody>
+<tr>
+  <td>
+    <div class="img-box">
+      <img src="../image/rx782.jpg" alt="Gundam RX-78-2">
+    </div>
+  </td>
+  <td>SP050</td>
+  <td>Gundam</td>
+  <td>RX-78-2 Gundam</td>
+  <td>2.000.000₫</td>
+  <td>2.400.000₫</td>
+  <td>20%</td>
+
+  
+  <td class="action-cell">
+    <input type="checkbox" id="more1" hidden>
+    <label for="more1" class="more-btn">&#8285;</label>
+
+    <div class="more-dropdown">
+      <button>Chỉnh lợi nhuận</button>
+    </div>
+  </td>
+</tr>
+  <!-- Sản phẩm 1 -->
+  <tr>
+    <td>
+      <div class="img-box">
+        <img src="../image/mgex.jpg" alt="Strike Freedom Gundam">
+      </div>
+    </td>
+    <td>SP049</td>
+    <td>Gundam</td>
+    <td>Strike Freedom Gundam</td>
+    <td>3.000.000₫</td>
+    <td>3.800.000₫</td>
+    <td>26%</td>
+    <td class="action-cell">
+      <input type="checkbox" id="more2" hidden>
+      <label for="more2" class="more-btn">&#8285;</label>
+      <div class="more-dropdown">
+        <button>Chỉnh lợi nhuận</button>
+      </div>
+    </td>
+  </tr>
+
+  <!-- Sản phẩm 2 -->
+  <tr>
+    <td>
+      <div class="img-box">
+        <img src="../image/bongchuyen1.jpg" alt="Bóng chuyền">
+      </div>
+    </td>
+    <td>SP048</td>
+    <td>Bóng/banh</td>
+    <td>Bóng chuyền</td>
+    <td>2.500.000₫</td>
+    <td>3.200.000₫</td>
+    <td>28%</td>
+    <td class="action-cell">
+      <input type="checkbox" id="more3" hidden>
+      <label for="more3" class="more-btn">&#8285;</label>
+      <div class="more-dropdown">
+        <button>Chỉnh lợi nhuận</button>
+      </div>
+    </td>
+  </tr>
+
+  <!-- Sản phẩm 3 -->
+  <tr>
+    <td>
+      <div class="img-box">
+        <img src="../image/mobirate.jpg" alt="Gokaiger Red">
+      </div>
+    </td>
+    <td>SP047</td>
+    <td>Super Sentai</td>
+    <td>Gokaiger Red</td>
+    <td>2.800.000₫</td>
+    <td>3.500.000₫</td>
+    <td>25%</td>
+    <td class="action-cell">
+      <input type="checkbox" id="more4" hidden>
+      <label for="more4" class="more-btn">&#8285;</label>
+      <div class="more-dropdown">
+        <button>Chỉnh lợi nhuận</button>
+      </div>
+    </td>
+  </tr>
+
+  <!-- Sản phẩm 4 -->
+  <tr>
+    <td>
+      <div class="img-box">
+        <img src="../image/kabuto.jpg" alt="Kamen Rider Dark Kabuto">
+      </div>
+    </td>
+    <td>SP046</td>
+    <td>Kamen Rider</td>
+    <td>Kamen Rider Dark Kabuto</td>
+    <td>3.200.000₫</td>
+    <td>4.000.000₫</td>
+    <td>25%</td>
+    <td class="action-cell">
+      <input type="checkbox" id="more5" hidden>
+      <label for="more5" class="more-btn">&#8285;</label>
+      <div class="more-dropdown">
+        <button>Chỉnh lợi nhuận</button>
+      </div>
+    </td>
+  </tr>
+
+  <!-- Sản phẩm 5 -->
+  <tr>
+    <td>
+      <div class="img-box">
+        <img src="../image/TCG.jpg" alt="Box TCG SSVS Elite Trainer">
+      </div>
+    </td>
+    <td>SP045</td>
+    <td>Pokemon</td>
+    <td>Box TCG SSVS Elite Trainer</td>
+    <td>1.500.000₫</td>
+    <td>1.920.000₫</td>
+    <td>28%</td>
+    <td class="action-cell">
+      <input type="checkbox" id="more6" hidden>
+      <label for="more6" class="more-btn">&#8285;</label>
+      <div class="more-dropdown">
+        <button>Chỉnh lợi nhuận</button>
+      </div>
+    </td>
+  </tr>
+
+  <!-- Sản phẩm 6 -->
+  <tr>
+    <td>
+      <div class="img-box">
+        <img src="../image/chudu.jpg" alt="Chu Du Figure">
+      </div>
+    </td>
+    <td>SP044</td>
+    <td>Figure</td>
+    <td>Chu Du Figure</td>
+    <td>2.800.000₫</td>
+    <td>3.500.000₫</td>
+    <td>25%</td>
+    <td class="action-cell">
+      <input type="checkbox" id="more7" hidden>
+      <label for="more7" class="more-btn">&#8285;</label>
+      <div class="more-dropdown">
+        <button>Chỉnh lợi nhuận</button>
+      </div>
+    </td>
+  </tr>
+
+  <!-- Sản phẩm 7 -->
+  <tr>
+    <td>
+      <div class="img-box">
+        <img src="../image/luffy5.jpg" alt="Luffy Gear 5">
+      </div>
+    </td>
+    <td>SP043</td>
+    <td>Figure</td>
+    <td>Luffy Gear 5</td>
+    <td>3.200.000₫</td>
+    <td>4.000.000₫</td>
+    <td>25%</td>
+    <td class="action-cell">
+      <input type="checkbox" id="more8" hidden>
+      <label for="more8" class="more-btn">&#8285;</label>
+      <div class="more-dropdown">
+        <button>Chỉnh lợi nhuận</button>
+      </div>
+    </td>
+  </tr>
+</tbody>
+
+
+      </table>
+    </section>
+    <!-- ===== PHÂN TRANG (NÚT BUTTON) ===== -->
+<div class="pagination">
+  <button class="prev">«</button>
+  <button class="active">1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button class="next">»</button>
+</div>
+  </main>
+</body>
+</html>

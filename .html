@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách sản phẩm - ToyZone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .search-box {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .search-box form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        input[type="text"], select, input[type="number"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex: 1;
+            min-width: 150px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .product {
+            background: #fff;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: #4CAF50;
+            padding: 5px 10px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+        }
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TOYZONE - Danh sách sản phẩm</h1>
+    </header>
+
+    <div class="container">
+        <div class="search-box">
+            <form method="get" action="#">
+                <input type="text" name="keyword" placeholder="Tìm theo tên sản phẩm...">
+                <select name="category">
+                    <option value="">-- Chọn phân loại --</option>
+                    <option value="lego">Lego</option>
+                    <option value="car">Xe điều khiển</option>
+                    <option value="doll">Búp bê</option>
+                    <option value="education">Đồ chơi giáo dục</option>
+                </select>
+                <input type="number" name="min_price" placeholder="Giá từ">
+                <input type="number" name="max_price" placeholder="Đến">
+                <button type="submit">Tìm kiếm</button>
+            </form>
+        </div>
+
+        <div class="product-list">
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150" alt="Lego City">
+                <h3>Lego City Fire Station</h3>
+                <p>Giá: 950.000₫</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150" alt="Xe điều khiển">
+                <h3>Xe điều khiển RC Turbo</h3>
+                <p>Giá: 650.000₫</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150" alt="Búp bê">
+                <h3>Búp bê Elsa Frozen</h3>
+                <p>Giá: 420.000₫</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/200x150" alt="Đồ chơi giáo dục">
+                <h3>Bộ đồ chơi học vẽ thông minh</h3>
+                <p>Giá: 520.000₫</p>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#">&laquo; Trước</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Sau &raquo;</a>
+        </div>
+    </div>
+</body>
+</html>

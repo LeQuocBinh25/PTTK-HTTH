@@ -1,0 +1,81 @@
+@import url('style mainad.css');
+
+/* Ghi đè màu theo mainad */
+.big { background: #003049; }
+.nav a.active { background: #1d3557; }
+.menu-btn { background: #003049; }
+.menu-btn:hover { background: #023e8a; }
+
+.tieudechinh {
+      text-align: center;
+      color: #001d3d;
+      text-shadow: 1px 1px #90e0ef;
+      margin-top: 10px;
+    }
+
+.divider {
+  height: 2px;
+  background: var(--accent-blue);
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+/* ====== HỘP THÔNG TIN KHÁCH HÀNG ====== */
+.order-detail-box {
+  background: #ffffff;
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  max-width: 900px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+/* ====== GRID THÔNG TIN ====== */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 8px 16px;
+  margin-bottom: 16px;
+}
+
+/* ====== LỊCH SỬ MUA HÀNG ====== */
+.hoadon p {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  transition: background 0.25s ease;
+}
+.hoadon p:hover {
+  background: #e8f0ff;
+}
+
+/* ====== NÚT ====== */
+.btn-small {
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.btn-small:hover { background: #023e8a; }
+/* ====== NÚT QUAY LẠI ====== */
+.btn-back {
+  display: inline-block;
+  background: #6c757d;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.25s;
+  position: relative;
+  left :788px ;
+}
+.btn-back:hover {
+  background: #495057;
+}
